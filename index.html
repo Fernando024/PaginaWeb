@@ -1,6 +1,9 @@
 <html>
 <head>
 <title>Pagina web :D</title>
+<link href="https://fonts.googleapis.com/css2?family=Handjet:wght@500&family=IBM+Plex+Mono:ital,wght@0,200;1,100&family=Roboto+Flex:opsz,wght@8..144,100;8..144,1000&family=Turret+Road&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="estilos pagina web.css">
 <link rel="shortcut icon" href="logope.png">
 <body>
   <h1>Robotica</h1>
@@ -13,18 +16,45 @@ Sin embargo, la robótica plantea desafíos éticos y sociales importantes. La a
 En resumen, la robótica es un campo en constante evolución que promete un futuro emocionante y lleno de posibilidades. Con cada avance, los robots se integran más en nuestras vidas y cambian la forma en que vivimos y trabajamos. La colaboración entre humanos y robots es esencial para aprovechar al máximo esta tecnología y garantizar un futuro donde la robótica beneficie a la sociedad en su conjunto.</p>
 <h5>Quires conocer algunas curiosidades sobre los robots?Da clic en snorlax</h5>
 <a href="https://www.loqueleo.es/noticias/actualidad/10-cosas-que-no-sabias-de-los-robots"><img src="https://i0.wp.com/i.pinimg.com/originals/50/ef/65/50ef65b8af841eb8638282f9dfc8f008.jpg?w=474&ssl=1 "width=250 height=250></a>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ // Add smooth scrolling to all links
+ $("a").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+   if (this.hash !== "") {
+     // Prevent default anchor click behavior
+     event.preventDefault();
+
+     // Store hash
+     var hash = this.hash;
+
+     // Using jQuery's animate() method to add smooth page scroll
+     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+     $('html, body').animate({
+       scrollTop: $(hash).offset().top
+     }, 100000000000, function(){
+
+       // Add hash (#) to URL when done scrolling (default click behavior)
+       window.location.hash = hash;
+     });
+   } // End if
+ });
+});
+</script>
+
 </body>
 <!--fonfo para la pagina web -->
-<style>
-body
-{
-  background-image:url('fondo.png')
-  }
-</style>
+
 
 <br></br>
 <h5>Clic en el pokemon para conocer sobe la electronica en los robots</h5>
-<a href="pagina 2.html"><img src="pokemon.png" width=350 height=250></a>
+<div>
+  <a href="pagina 2.html"><img src="pokemon.png" width=350 height=250></a>
+</div>
+
 
 </head>
 </html>
